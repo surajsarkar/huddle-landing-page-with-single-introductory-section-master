@@ -1,8 +1,47 @@
 body {
     margin: 0;
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 400;
 }
 
 .top_parent {
     background-color: hsl(257, 40%, 49%);
     background-image: url(images/bg-desktop.svg);
+    padding: 3% 6%;
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 400;
+}
+
+nav {
+    margin-bottom: 4%;
+}
+
+.small_parent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+/* .mockup_img {} */
+
+.message {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+}
+
+button {
+    width: 100px;
+}
+
+.communicate_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.fa_icons {
+    color: white;
+    margin: 4px;
+    padding: 4px;
 }
