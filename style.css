@@ -3,6 +3,7 @@ body {
     font-family: 'Open Sans' sans-serif;
     font-weight: 400;
     color: whitesmoke;
+    background-color: hsl(257, 40%, 49%);
 }
 
 .top_parent {
@@ -17,27 +18,59 @@ nav {
     margin-bottom: 4%;
 }
 
+nav img {
+    height: 40px;
+}
+
 .small_parent {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 20px;
+    grid-template-columns: 1.5fr 1fr;
+    /* margin: 20px; */
 }
 
 .mockup_img {
-    width: 80%;
+    width: 95%;
 }
 
 .message {
     display: flex;
     flex-direction: column;
     font-family: 'Poppins';
+    margin: 20px 0px;
 }
 
 button {
-    width: 100px;
+    background-color: whitesmoke;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
     color: magenta;
-    border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-top: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+}
+
+button:hover {
+    background-color: blue;
+    color: whitesmoke;
+}
+
+span {
+    margin: 10px 0px;
+}
+
+.msg_heading {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.msg_body {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 1.5;
 }
 
 .communicate_icons {
@@ -51,4 +84,44 @@ button {
     color: white;
     margin: 4px;
     padding: 4px;
+}
+
+.fa_icons:hover {
+    color: blue;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        text-align: center;
+    }
+    .top_parent {
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    nav {
+        text-align: left;
+        margin-top: 25px;
+    }
+    .small_parent {
+        display: flex;
+        flex-direction: column;
+    }
+    .mockup_box {
+        margin: 40px auto;
+    }
+    .msg_heading {
+        font-size: 25px;
+    }
+    .msg_body {
+        font-size: 14px;
+    }
+    button {
+        margin: 10px auto;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+    .communicate_icons {
+        justify-content: center;
+        align-items: center;
+    }
 }
